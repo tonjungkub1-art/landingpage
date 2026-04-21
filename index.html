@@ -3,124 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holysai - หูฟังคุณภาพดี ฟังสนุกทุกไลฟ์สไตล์</title>
+    <title>Holysai - ร้านหูฟังคุณภาพ</title>
     <script src="https://tailwindcss.com"></script>
     <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        body { font-family: 'Kanit', sans-serif; }
-    </style>
+    <style>body { font-family: 'Kanit', sans-serif; }</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header / Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-indigo-600">HOLYSAI</h1>
-            <div class="space-x-6 hidden md:block">
-                <a href="#products" class="hover:text-indigo-600">สินค้าทั้งหมด</a>
-                <a href="#about" class="hover:text-indigo-600">ทำไมต้องเรา</a>
-                <a href="#contact" class="hover:text-indigo-600">ติดต่อสอบถาม</a>
-            </div>
-        </div>
+<body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md text-center">
+        <h1 class="text-2xl font-bold text-blue-600">HOLYSAI</h1>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-indigo-900 text-white py-16 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">เปลี่ยนทุกการฟังให้เป็น <br><span class="text-indigo-400">ประสบการณ์สุดพิเศษ</span></h2>
-                <p class="text-lg mb-8 text-gray-300">คัดสรรหูฟังคุณภาพเยี่ยม ตอบโจทย์ทั้งการทำงาน ออกกำลังกาย และพักผ่อน ในราคาที่คุ้มค่าที่สุด</p>
-                <div class="flex space-x-4">
-                    <a href="#products" class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold transition">เลือกซื้อสินค้า</a>
-                    <a href="#contact" class="bg-white text-indigo-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">ปรึกษาผู้เชี่ยวชาญ</a>
-                </div>
-            </div>
-            <div class="md:w-1/2">
-                <!-- รูปภาพหูฟังแบบเนียนๆ -->
-                <img src="https://unsplash.com" alt="Premium Headphones" class="rounded-2xl shadow-2xl">
-            </div>
-        </div>
+    <header class="bg-blue-800 text-white py-12 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">หูฟังคุณภาพดี ฟังสนุกทุกสไตล์</h2>
+        <p class="mb-8">คัดสรรหูฟังที่ตอบโจทย์คุณที่สุด ในราคาที่เป็นกันเอง</p>
+        <!-- รูปหลัก: หูฟังสีดำสุดหรู -->
+        <img src="https://unsplash.com" class="mx-auto rounded-lg shadow-xl max-w-full h-auto mb-6" style="max-height: 400px;">
     </header>
 
-    <!-- Product Features (เหมาะสำหรับ Google Ads) -->
-    <section id="about" class="py-16 max-w-6xl mx-auto px-4 text-center">
-        <h3 class="text-3xl font-bold mb-12">ทำไมต้องเลือกหูฟังจาก Holysai?</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <div class="text-4xl mb-4">🔊</div>
-                <h4 class="text-xl font-semibold mb-2">คุณภาพเสียงระดับ Hi-Fi</h4>
-                <p class="text-gray-600">รายละเอียดเสียงครบถ้วน เบสนุ่มลึก เสียงกลางชัดเจน ให้คุณเข้าถึงทุกอารมณ์เพลง</p>
+    <section class="py-12 max-w-5xl mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-8 text-center">สินค้ายอดนิยม</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- สินค้า 1 -->
+            <div class="bg-white p-4 rounded shadow">
+                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold">Holysai Wireless Pro</h4>
+                <p class="text-blue-600 font-bold">฿3,590</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <div class="text-4xl mb-4">🔋</div>
-                <h4 class="text-xl font-semibold mb-2">แบตเตอรี่ใช้งานยาวนาน</h4>
-                <p class="text-gray-600">รองรับการใช้งานสูงสุด 40 ชั่วโมง พร้อมระบบ Fast Charge ชาร์จเพียง 10 นาที ฟังได้นาน 3 ชั่วโมง</p>
+            <!-- สินค้า 2 -->
+            <div class="bg-white p-4 rounded shadow">
+                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold">Holysai Gamer G1</h4>
+                <p class="text-blue-600 font-bold">฿2,290</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <div class="text-4xl mb-4">🛡️</div>
-                <h4 class="text-xl font-semibold mb-2">รับประกันศูนย์ไทย 1 ปี</h4>
-                <p class="text-gray-600">มั่นใจได้ในบริการหลังการขาย สินค้าของแท้ 100% พร้อมดูแลตลอดอายุการใช้งาน</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Showcase -->
-    <section id="products" class="bg-gray-100 py-16 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="text-3xl font-bold mb-12 text-center">สินค้ายอดนิยม</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Item 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md group">
-                    <img src="https://unsplash.com" alt="Wireless Headphone" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold">Holysai Wireless Pro</h4>
-                        <p class="text-sm text-gray-500 mb-4">ตัดเสียงรบกวนได้เงียบสนิท ใส่สบายตลอดทั้งวัน</p>
-                        <p class="text-indigo-600 font-bold text-xl">฿3,590</p>
-                    </div>
-                </div>
-                <!-- Item 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md group">
-                    <img src="https://unsplash.com" alt="Gaming Headset" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold">Holysai Gamer G1</h4>
-                        <p class="text-sm text-gray-500 mb-4">มิติเสียงแม่นยำ ไมโครโฟนตัดเสียงรบกวนรอบข้าง</p>
-                        <p class="text-indigo-600 font-bold text-xl">฿2,290</p>
-                    </div>
-                </div>
-                <!-- Item 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md group">
-                    <img src="https://unsplash.com" alt="In-Ear Headphones" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold">Holysai Air Buds</h4>
-                        <p class="text-sm text-gray-500 mb-4">ขนาดพกพาสะดวก กันน้ำกันเหงื่อมาตรฐาน IPX5</p>
-                        <p class="text-indigo-600 font-bold text-xl">฿1,890</p>
-                    </div>
-                </div>
+            <!-- สินค้า 3 -->
+            <div class="bg-white p-4 rounded shadow">
+                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold">Holysai Air Buds</h4>
+                <p class="text-blue-600 font-bold">฿1,890</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Privacy (สำคัญมากสำหรับ Google Ads) -->
-    <footer class="bg-white border-t border-gray-200 py-12 px-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-500">
-            <div>
-                <h4 class="font-bold text-gray-800 mb-4">HOLYSAI SHOP</h4>
-                <p>เราคือตัวแทนจำหน่ายหูฟังชั้นนำที่มุ่งเน้นการส่งมอบประสบการณ์ทางเสียงที่ดีที่สุดให้กับลูกค้า สินค้าทุกชิ้นผ่านการตรวจสอบคุณภาพก่อนส่งถึงมือคุณ</p>
-            </div>
-            <div id="contact" class="md:text-right">
-                <h4 class="font-bold text-gray-800 mb-4">ข้อมูลติดต่อ</h4>
-                <p>อีเมล: support@holysai.com</p>
-                <p>เวลาทำการ: จันทร์ - ศุกร์ | 09:00 - 18:00 น.</p>
-                <div class="mt-4 space-x-4">
-                    <a href="#" class="underline">นโยบายความเป็นส่วนตัว</a>
-                    <a href="#" class="underline">ข้อตกลงและเงื่อนไข</a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-12 text-xs text-gray-400">
-            &copy; 2024 Holysai. All rights reserved.
-        </div>
+    <footer class="bg-white py-8 border-t text-center text-gray-500">
+        <p>&copy; 2026 Holysai | <a href="#" class="underline">Privacy Policy</a></p>
+        <p class="text-xs mt-2">ข้อมูลครบถ้วนสำหรับ Google Ads</p>
     </footer>
-
 </body>
 </html>
