@@ -3,50 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holysai - ร้านหูฟังคุณภาพ</title>
-    <script src="https://tailwindcss.com"></script>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <style>body { font-family: 'Kanit', sans-serif; }</style>
+    <title>Holysai - หูฟังคุณภาพเยี่ยม เสียงคมชัดทุกมิติ</title>
+    <meta name="description" content="ร้าน Holysai จำหน่ายหูฟังคุณภาพสูง เสียงดี เบสแน่น สวมใส่สบาย ตอบโจทย์ทุกไลฟ์สไตล์ จัดส่งฟรี มีรับประกันสินค้า">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-white p-4 shadow-md text-center">
-        <h1 class="text-2xl font-bold text-blue-600">HOLYSAI</h1>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900 tracking-wider">HOLYSAI</h1>
+            <ul class="flex space-x-6 text-sm font-medium text-gray-600">
+                <li><a href="#products" class="hover:text-black transition">สินค้าของเรา</a></li>
+                <li><a href="#features" class="hover:text-black transition">ทำไมต้องเลือกเรา</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header class="bg-blue-800 text-white py-12 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">หูฟังคุณภาพดี ฟังสนุกทุกสไตล์</h2>
-        <p class="mb-8">คัดสรรหูฟังที่ตอบโจทย์คุณที่สุด ในราคาที่เป็นกันเอง</p>
-        <!-- รูปหลัก: หูฟังสีดำสุดหรู -->
-        <img src="https://unsplash.com" class="mx-auto rounded-lg shadow-xl max-w-full h-auto mb-6" style="max-height: 400px;">
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:flex lg:items-center lg:justify-between">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl">
+                    สัมผัสประสบการณ์เสียง<br>ที่คุณไม่เคยได้ยินมาก่อน
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    หูฟัง Holysai คัดสรรเฉพาะวัสดุพรีเมียม เพื่อให้คุณดื่มด่ำกับเสียงเพลงได้อย่างเต็มอารมณ์ ตัดเสียงรบกวนดีเยี่ยม แบตเตอรี่ใช้งานได้ยาวนาน
+                </p>
+                <div class="mt-8">
+                    <a href="#products" class="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition">
+                        ดูสินค้าทั้งหมด
+                    </a>
+                </div>
+            </div>
+            <div class="mt-10 lg:mt-0 lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="หูฟัง Holysai Premium" class="rounded-lg shadow-xl object-cover h-96 w-full">
+            </div>
+        </div>
     </header>
 
-    <section class="py-12 max-w-5xl mx-auto px-4">
-        <h3 class="text-2xl font-bold mb-8 text-center">สินค้ายอดนิยม</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- สินค้า 1 -->
-            <div class="bg-white p-4 rounded shadow">
-                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
-                <h4 class="font-bold">Holysai Wireless Pro</h4>
-                <p class="text-blue-600 font-bold">฿3,590</p>
-            </div>
-            <!-- สินค้า 2 -->
-            <div class="bg-white p-4 rounded shadow">
-                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
-                <h4 class="font-bold">Holysai Gamer G1</h4>
-                <p class="text-blue-600 font-bold">฿2,290</p>
-            </div>
-            <!-- สินค้า 3 -->
-            <div class="bg-white p-4 rounded shadow">
-                <img src="https://unsplash.com" class="rounded mb-4 w-full h-48 object-cover">
-                <h4 class="font-bold">Holysai Air Buds</h4>
-                <p class="text-blue-600 font-bold">฿1,890</p>
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">สินค้ายอดนิยม</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Holysai Studio Pro" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Holysai Studio Pro</h4>
+                        <p class="mt-2 text-sm text-gray-600">หูฟัง Over-ear ระดับสตูดิโอ ตัดเสียงรบกวน ANC แบบแยกมิติเสียง</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-black">฿4,990</span>
+                            <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded text-sm font-medium hover:bg-gray-200">สั่งซื้อสินค้า</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Holysai Active Fit" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Holysai Active Fit</h4>
+                        <p class="mt-2 text-sm text-gray-600">หูฟังไร้สาย In-ear กันน้ำ IPX7 เหมาะสำหรับการออกกำลังกายและสายลุย</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-black">฿2,490</span>
+                            <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded text-sm font-medium hover:bg-gray-200">สั่งซื้อสินค้า</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Holysai Classic" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Holysai Classic</h4>
+                        <p class="mt-2 text-sm text-gray-600">ดีไซน์มินิมอล น้ำหนักเบา สวมใส่สบายตลอดวัน แบตเตอรี่อึด 40 ชั่วโมง</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-black">฿1,890</span>
+                            <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded text-sm font-medium hover:bg-gray-200">สั่งซื้อสินค้า</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-8 border-t text-center text-gray-500">
-        <p>&copy; 2026 Holysai | <a href="#" class="underline">Privacy Policy</a></p>
-        <p class="text-xs mt-2">ข้อมูลครบถ้วนสำหรับ Google Ads</p>
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">รับประกันศูนย์ไทย 1 ปี</h4>
+                    <p class="text-sm text-gray-500 mt-2">สินค้าทุกชิ้นรับประกันคุณภาพ เปลี่ยนเครื่องใหม่ทันทีหากพบปัญหาจากการผลิต</p>
+                </div>
+                <div>
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">จัดส่งด่วนฟรีทั่วประเทศ</h4>
+                    <p class="text-sm text-gray-500 mt-2">สั่งซื้อวันนี้ จัดส่งทันทีด้วยระบบขนส่งเอกชนชั้นนำ ถึงมือภายใน 1-2 วัน</p>
+                </div>
+                <div>
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">ระบบชำระเงินปลอดภัย</h4>
+                    <p class="text-sm text-gray-500 mt-2">รองรับการชำระเงินหลากหลายช่องทาง ปลอดภัยด้วยมาตรฐานระดับสากล</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h2 class="text-white text-lg font-bold tracking-wider mb-4">HOLYSAI</h2>
+                <p class="text-sm leading-relaxed">
+                    ผู้จัดจำหน่ายหูฟังคุณภาพระดับพรีเมียม เพื่อประสบการณ์เสียงที่สมบูรณ์แบบสำหรับทุกคน
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">นโยบายและการบริการ</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">นโยบายความเป็นส่วนตัว (Privacy Policy)</a></li>
+                    <li><a href="#" class="hover:text-white">เงื่อนไขการให้บริการ (Terms of Service)</a></li>
+                    <li><a href="#" class="hover:text-white">นโยบายการคืนสินค้าและการคืนเงิน (Refund Policy)</a></li>
+                    <li><a href="#" class="hover:text-white">ข้อมูลการจัดส่งสินค้า</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">ข้อมูลร้านค้า</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>บริษัท โฮลี่ซาย จำกัด</li>
+                    <li>อีเมล: support@holysai.com</li>
+                    <li>เวลาทำการ: จันทร์ - ศุกร์ (09:00 - 18:00 น.)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2026 Holysai. All rights reserved.
+        </div>
     </footer>
+
 </body>
 </html>
